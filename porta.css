@@ -1,0 +1,97 @@
+body {
+    background-image: url(img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 1500px;
+}
+
+.general {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 70%;
+}
+
+.project {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.bottom {
+    font-size: 24px;
+    color: azure;
+}
+
+@media(width<1000px) {
+
+
+    .bottom {
+        width: 350px;
+    }
+
+    .top {
+        width: 350px;
+    }
+
+    .project{
+        width: 355px;
+    }
+
+    .general {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+
+
+@media(width<500px) {
+    
+    body{
+        height: 2000px;
+    }
+    
+    
+    .bottom {
+        width: 200px;
+    }
+
+    .top {
+        width: 200px;
+    }
+
+    .project{
+        width: 205px;
+    }
+
+    .general {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+}

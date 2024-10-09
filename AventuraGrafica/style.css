@@ -1,0 +1,41 @@
+body {
+    background-image: url(img/calle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    height: 100vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#cuadro1 {
+    width: 400px;
+    height: 200px;
+    border: solid 5px grey;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 2px;
+    display: none;
+    padding: 10px;
+}
+
+#text {
+    display: block;
+}
+
+#areaPuerta {
+    position: absolute;
+    top: 500px;
+    left: 930px;
+    width: 70px;
+    height: 250px;
+   
+
+}
+

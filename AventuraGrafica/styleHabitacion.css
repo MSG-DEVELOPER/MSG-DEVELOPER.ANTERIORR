@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: crosshair;
+}
+
+
+#areaTeclado{
+width: 90px;
+height: 20px;
+
+position: relative;
+right: 440px;
+top: 90px;
+}
+
+#areaBoton{
+    position: relative;
+    width: 25px;
+    height: 25px;
+   
+    right: 577px;
+    top: 53px;
+}
+
+
+
+#imagen{
+   
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+}
+
+#areaPlanta{
+    position: absolute;
+    top: 600px;
+    left: 550px;
+    width: 60px;
+    height: 120px;
+   
+}
+
+#areaBiblio {
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    width: 260px;
+    height: 180px;
+   
+}
