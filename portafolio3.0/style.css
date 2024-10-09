@@ -1,0 +1,394 @@
+body {
+    background-image: url(img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h1 {
+    font-size: 80px;
+    color: aqua;
+}
+
+#segunda_linea {
+    margin-top: -70px;
+}
+
+#foto {
+    margin-top: -80px;
+    width: 280px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.texto_encabezado {
+    margin-top: 50px;
+}
+
+/*IN ORDER TO GET THE 3 SECCIONS STRUCTURED*/
+
+.seccions {
+    display: flex;
+
+}
+
+/*ABOUT ME */
+
+
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.aboutMe {
+    margin-top: 20pxs;
+    height: 800px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin-left: 30px;
+
+
+}
+
+.titulillo_seccion {
+    font-family: Dancing Script;
+    color: white;
+    font-size: 40px;
+
+
+}
+
+.textAboutMe {
+
+    font-size: 26px;
+    color: antiquewhite;
+    text-align: justify
+}
+
+.contactMe {
+    margin-top: 200px;
+
+    height: 100px;
+
+    width: 100%;
+
+
+}
+
+.imagenContacto {
+
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.701);
+    border-radius: 45%;
+}
+
+.imagenContacto:hover {
+
+    transform: scale(1.25);
+    transition: 4s;
+}
+
+
+
+
+
+
+
+
+/* CARRUSEL*/
+
+#marcos-slider {
+    font-family: sans-serif;
+    width: 30%;
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    /* border: solid black 2px;*/
+}
+
+#marcos-slider ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#marcos-slider>ul.slider {
+    position: relative;
+    width: 80%;
+    height: 300px;
+}
+
+#marcos-slider>ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .5s;
+}
+
+#marcos-slider>ul.slider li:first-child {
+    opacity: 1;
+}
+
+#marcos-slider>ul.slider li:target {
+    opacity: 1;
+}
+
+#marcos-slider>ul.slider li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: auto;
+    /* Asegura que la imagen sea clicable */
+}
+
+#marcos-slider>ul.slider li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+/* Estilos de navegación */
+
+#marcos-slider>.menu {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 20px;
+    /* Ajusta la posición de los números */
+}
+
+#marcos-slider>.menu li {
+    display: inline-block;
+}
+
+#marcos-slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+
+/*SECCION 3/3 SKILLS*/
+
+.skills {
+    margin-top: 20pxs;
+    margin-left: 40px;
+    height: 800px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.skill {
+    display: flex;
+
+    align-items: center;
+
+
+}
+
+.letraSkill {
+    font-size: 26px;
+    color: white;
+    font-weight: bolder;
+}
+
+.check {
+    margin-right: 5px;
+
+}
+
+
+
+
+
+/* MEDIA QUERYS */
+@media(width<400px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .texto_encabezado {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #foto {
+        width: 150px;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+
+    .encabezado {
+        margin-top: -50px;
+    }
+
+    .titulillo_seccion {
+        font-size: 30px;
+
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .seccions {
+        flex-direction: column;
+
+    }
+
+    .aboutMe {
+        width: 95%;
+        height: 650px;
+        margin-left: 3px;
+        margin-top: 50px;
+
+    }
+
+    .textAboutMe {
+        font-size: 17px;
+    }
+
+    .skills {
+        width: 98%;
+        margin-left: 3px;
+        height: 700px;
+
+
+    }
+
+    #marcos-slider {
+        width: 100%;
+        margin-top: 35px;
+
+
+    }
+
+    #titulo_carrusel {
+        margin-left: 0px;
+
+    }
+
+    .check {
+        background-color: bisque;
+    }
+
+
+
+}
+
+
+@media(399px<width<1000px) {
+    body {
+        width: 100%;
+    }
+
+    .texto_encabezado {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #foto {
+        width: 150px;
+        margin-top: -20px;
+        margin-right: 30px;
+    }
+
+    .seccions {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .aboutMe {
+        width: 90%;
+        margin-left: 5px;
+
+
+
+    }
+
+
+    .skills {
+        width: 95%;
+        height: 700px;
+
+    }
+
+    #marcos-slider {
+        width: 100%;
+        /*  margin-left: 35px;*/
+
+    }
+
+
+    .check {
+        background-color: bisque;
+    }
+
+
+
+}
+
+
+
+@media(1001px<width<1200px) {
+    body {
+        width: 100%;
+    }
+
+    .texto_encabezado {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #foto {
+        width: 200px;
+        margin-top: -20px;
+        margin-right: 30px;
+    }
+
+}
